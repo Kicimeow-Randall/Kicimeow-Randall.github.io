@@ -214,6 +214,122 @@
   
   
   <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://kicimeow.github.io/2019/10/14/post-title/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kicimeow">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kicimeow">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2019/10/14/post-title/" class="post-title-link" itemprop="url">今日学习</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-10-14 19:45:30 / 修改时间：19:57:05" itemprop="dateCreated datePublished" datetime="2019-10-14T19:45:30+08:00">2019-10-14</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <pre><code>/*筛选数组
+filter()方法创建一个新的数组，新数组中的元素是通过检查制定数组中符合条件的所有元素，
+主要用于筛选数组。
+*/
+var arr = [12, 52, 5, 40];
+var newArr = arr.filter(function(value, index) {
+    // return value &gt; 20;
+    return value % 2 == 0;
+});
+console.log(newArr);
+
+/*迭代数组
+forEach()
+array.forEach(function(currentValue, index, arr) {
+    *************
+    *************
+})
+currentValue: 数组当前的值
+index: 数组当前的索引
+arr: 数组对象本身
+*/
+var arr = [12, 52, 5, 40];
+var sum = 0;
+arr.forEach(function(value, index, array) {
+    console.log(&apos;每个数组元素&apos; + value);
+    console.log(&apos;每个数组索引号&apos; + index);
+    console.log(&apos;每个数组本身&apos; + array);
+    sum += value;
+}) 
+console.log(sum);
+
+/*some()
+array.some(function(currentValue, index, arr) {
+    ******************
+    ******************
+})
+some()方法用于检测数组中的元素是否满足指定条件，通俗点就是查找数组中是否有满足条件的元素。
+注意它返回的是布尔值，如果查找到这个元素，就返回true，查不到就返回false。
+*/
+var arr = [12, 52, 5, 40];
+var dge = arr.some(function(value){
+    // return value &gt;= 50;
+    return value &gt; 100; 
+})
+console.log(dge)</code></pre>
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
     <link itemprop="mainEntityOfPage" href="http://kicimeow.github.io/2019/10/13/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -337,7 +453,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

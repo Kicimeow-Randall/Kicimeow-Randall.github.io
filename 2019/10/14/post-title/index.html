@@ -55,14 +55,18 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Kicimeow">
-<meta property="og:url" content="http://kicimeow.github.io/archives/index.html">
+  <meta name="description" content="/*筛选数组 filter()方法创建一个新的数组，新数组中的元素是通过检查制定数组中符合条件的所有元素， 主要用于筛选数组。 */ var arr = [12, 52, 5, 40]; var newArr = arr.filter(function(value, index) {     // return value &amp;gt; 20;     return value % 2 == 0; }">
+<meta property="og:type" content="article">
+<meta property="og:title" content="今日学习">
+<meta property="og:url" content="http://kicimeow.github.io/2019/10/14/post-title/index.html">
 <meta property="og:site_name" content="Kicimeow">
+<meta property="og:description" content="/*筛选数组 filter()方法创建一个新的数组，新数组中的元素是通过检查制定数组中符合条件的所有元素， 主要用于筛选数组。 */ var arr = [12, 52, 5, 40]; var newArr = arr.filter(function(value, index) {     // return value &amp;gt; 20;     return value % 2 == 0; }">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-10-14T11:57:05.884Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kicimeow">
-  <link rel="canonical" href="http://kicimeow.github.io/archives/">
+<meta name="twitter:title" content="今日学习">
+<meta name="twitter:description" content="/*筛选数组 filter()方法创建一个新的数组，新数组中的元素是通过检查制定数组中符合条件的所有元素， 主要用于筛选数组。 */ var arr = [12, 52, 5, 40]; var newArr = arr.filter(function(value, index) {     // return value &amp;gt; 20;     return value % 2 == 0; }">
+  <link rel="canonical" href="http://kicimeow.github.io/2019/10/14/post-title/">
 
 
 <script id="page-configurations">
@@ -70,13 +74,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
-    isArchive: true
+    isArchive: false
   };
 </script>
 
-  <title>归档 | Kicimeow</title>
+  <title>今日学习 | Kicimeow</title>
   
 
 
@@ -206,113 +210,144 @@
         <div class="content-wrap">
             
 
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-  
-
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        
-        
-        
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://kicimeow.github.io/2019/10/14/post-title/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kicimeow">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kicimeow">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">今日学习
+
           
-        
-        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
-      </div>
-      
+        </h1>
 
-      
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
 
-  
-  
+              
+                
+              
 
-  
+              <time title="创建时间：2019-10-14 19:45:30 / 修改时间：19:57:05" itemprop="dateCreated datePublished" datetime="2019-10-14T19:45:30+08:00">2019-10-14</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+
+        </div>
+      </header>
+
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <pre><code>/*筛选数组
+filter()方法创建一个新的数组，新数组中的元素是通过检查制定数组中符合条件的所有元素，
+主要用于筛选数组。
+*/
+var arr = [12, 52, 5, 40];
+var newArr = arr.filter(function(value, index) {
+    // return value &gt; 20;
+    return value % 2 == 0;
+});
+console.log(newArr);
+
+/*迭代数组
+forEach()
+array.forEach(function(currentValue, index, arr) {
+    *************
+    *************
+})
+currentValue: 数组当前的值
+index: 数组当前的索引
+arr: 数组对象本身
+*/
+var arr = [12, 52, 5, 40];
+var sum = 0;
+arr.forEach(function(value, index, array) {
+    console.log(&apos;每个数组元素&apos; + value);
+    console.log(&apos;每个数组索引号&apos; + index);
+    console.log(&apos;每个数组本身&apos; + array);
+    sum += value;
+}) 
+console.log(sum);
+
+/*some()
+array.some(function(currentValue, index, arr) {
+    ******************
+    ******************
+})
+some()方法用于检测数组中的元素是否满足指定条件，通俗点就是查找数组中是否有满足条件的元素。
+注意它返回的是布尔值，如果查找到这个元素，就返回true，查不到就返回false。
+*/
+var arr = [12, 52, 5, 40];
+var dge = arr.some(function(value){
+    // return value &gt;= 50;
+    return value &gt; 100; 
+})
+console.log(dge)</code></pre>
     </div>
-  
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-10-14T19:45:30+08:00"
-              content="2019-10-14">
-          10-14
-        </time>
-      </div>
-
-      <h2 class="post-title">
+    
+    
+    
         
-          <a class="post-title-link" href="/2019/10/14/post-title/" itemprop="url">
-            <span itemprop="name">今日学习</span>
-          </a>
+      
+
+      <footer class="post-footer">
+
         
-      </h2>
 
-    </header>
-  </article>
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/10/13/hello-world/" rel="next" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
+              
+            </div>
 
+            <span class="post-nav-divider"></span>
 
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-10-13T14:02:10+08:00"
-              content="2019-10-13">
-          10-13
-        </time>
-      </div>
-
-      <h2 class="post-title">
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
         
-          <a class="post-title-link" href="/2019/10/13/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-        
-      </h2>
-
-    </header>
-  </article>
-
-
-
-
-    </div>
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-
+  </div>
 
 
           </div>
@@ -331,6 +366,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
