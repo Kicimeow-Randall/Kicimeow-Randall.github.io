@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Kicimeow&#39;s House</title>
+  
+  <subtitle>Meow meow meow</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://kicimeow.github.io/"/>
+  <updated>2019-10-15T17:48:53.217Z</updated>
+  <id>http://kicimeow.github.io/</id>
+  
+  <author>
+    <name>Kicimeow</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Kicimeow的今日学习总结</title>
+    <link href="http://kicimeow.github.io/2019/10/15/postName/"/>
+    <id>http://kicimeow.github.io/2019/10/15/postName/</id>
+    <published>2019-10-15T12:09:41.000Z</published>
+    <updated>2019-10-15T17:48:53.217Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;学习总结&lt;br&gt;1、createElement( ):&lt;br&gt;createElement() 方法通过指定名称创建一个元素,&lt;br&gt;实例：创建一个行&lt;br&gt;var tr = document.createElement(‘tr’);&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="学习日志" scheme="http://kicimeow.github.io/categories/%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="learning" scheme="http://kicimeow.github.io/tags/learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>今日学习总结</title>
+    <link href="http://kicimeow.github.io/2019/10/14/post-title/"/>
+    <id>http://kicimeow.github.io/2019/10/14/post-title/</id>
+    <published>2019-10-14T11:45:30.000Z</published>
+    <updated>2019-10-15T17:49:05.839Z</updated>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;/*筛选数组
+filter()方法创建一个新的数组，新数组中的元素是通过检查制定数组中符合条件的所有元素，
+主要用于筛选数组。
+*/
+var arr = [12, 52, 5, 40];
+var newArr = arr.filter(function(value, index) {
+    // return value &amp;gt; 20;
+    return value % 2 == 0;
+});&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
