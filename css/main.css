@@ -1694,7 +1694,7 @@ pre .javascript .function {
   text-align: center;
 }
 .posts-expand {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 @media (max-width: 767px) {
   .posts-expand {
@@ -1816,6 +1816,7 @@ pre .javascript .function {
   display: inline-block;
   position: relative;
   vertical-align: top;
+  font-size: 20px;
 }
 .posts-expand .post-title-link::before {
   background-color: #000;
@@ -1842,7 +1843,7 @@ pre .javascript .function {
 .posts-expand .post-meta {
   color: #999;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  margin: 3px 0 60px 0;
+  margin: 3px 0 30px 0;
   text-align: center;
 }
 .posts-expand .post-meta .post-description {
@@ -1926,7 +1927,7 @@ pre .javascript .function {
 .post-body p {
   margin-top: 0px;
   margin-bottom: 60px;
-  padding: 25px;
+  padding: 10px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.9);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.9);
 }
